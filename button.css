@@ -5,6 +5,8 @@
 
 }
 
+/* for outer layer/Box named as wrapper */
+
 .wrapper{
     height:100vh;
     width:100vw;
@@ -14,6 +16,7 @@
    justify-content: center;
 
 }
+/* creating css effect in div named button */
 .button{
     height:10%;
     width:20%;
@@ -23,10 +26,11 @@
    justify-content: center;
    position: relative;
    z-index: 1;
+   color: aliceblue;
    
 }
 
-
+/* creating a Black strip in button div */
 .button::before{
     content:"";
    background-color: black;
@@ -42,9 +46,9 @@
    z-index: -1;
 
 }
-/* .button:hover
+.button:hover::before
 {
     transform: scaleX(1);
     cursor: pointer;
-
-} */
+    box-shadow: 2px 2px 5px  rgb(255, 149, 0),-2px -2px 5px  rgb(255, 149, 0);
+}
